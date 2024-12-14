@@ -1,24 +1,26 @@
 # Telecommunication Customer Churn Prediction
 
-# Capstone Project - Airbnb Bangkok Listings
-
 ## Project Overview
 
-This repository contains Module 3 and 4 Capstone Projects for the DTI Data Science Program at Purwadhika Digital School.
+This repository contains Module 3 and 4 Capstone Projects for the DTI Data Science Program at Purwadhika Digital School. 
 
-## Repository Contents
+This project consists of the following:
+- [Customer Churn Prediction Model](#Customer-Churn-Prediction-Model)
+- Customer Churn Prediction App using Streamlit
+- Model Deployment to Google Cloud
 
+## Customer Churn Prediction Model
 
-## Background
-
-
-
-## Business Problem
-
-
+### Background
 
 
-## Conclusion 
+
+### Business Problem
+
+
+
+
+### Conclusion 
 
 
 
