@@ -15,14 +15,22 @@ This project consists of the following:
 - `model.pkl`         : The model saved to a pickle file.
 - `data`              : The data folder containing datasets related to this project. The data used for model development is `data_telco_customer_churn.csv`
 
-### Background
+### Overview
 
 
-### Business Problem
+### Evaluation Metrics
+The evaluation metrics primarily used in this project are F2 Score, Recall, and ROC AUC Score.
 
+### Modeling Process
+- Comparison of multiple classification models without resampling methods
+- Comparison of multiple classifcation models with resampling methods
+- Choose top 3 models with best F2 score
+- Comparison of the top models with hyperparameter tuning
+- Choose best model with best F2 score
 
 ### Conclusion 
-
+- The best model to predict customer churn is the Gradient Boosting model with Instance Hardness Threshold for the resampling methods.
+  
 
 ## Customer Churn Prediction App using Streamlit
 The streamlit app is available in the `streamlit_app.py` file. The `pages` folder stores the pages related to this app. To run the app, pass this code to your command shell:
