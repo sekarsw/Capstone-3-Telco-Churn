@@ -13,7 +13,7 @@ This project consists of the following:
 ### Project Files
 - `capstone_3.ipynb`  : The notebook containing the end-to-end model development.
 - `model.pkl`         : The model saved to a pickle file.
-- `data`              : The data folder containing datasets related to this project. The data used for model development is `data_telco_customer_churn.csv`
+- [`data`](https://github.com/sekarsw/Capstone-3-Telco-Churn/tree/main/data)              : The data folder containing datasets related to this project. The data used for model development is `data_telco_customer_churn.csv`
 
 ### Overview
 
