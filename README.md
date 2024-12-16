@@ -11,12 +11,14 @@ This project consists of the following:
 
 ## Customer Churn Prediction Model
 ### Project Files
-- [`Capstone 3 - Telco Churn.ipynb`](https://github.com/sekarsw/Capstone-3-Telco-Churn/blob/main/Capstone%203%20-%20Telco%20Churn.ipynb)  : The notebook containing the end-to-end model development.
+- [`Capstone 3 - Telco Churn.ipynb`](https://github.com/sekarsw/Capstone-3-Telco-Churn/blob/main/Capstone%203%20-%20Telco%20Churn.ipynb)  : The notebook containing the end-to-end model development with detailed explanations.
 - `model.pkl`         : The model saved to a pickle file.
 - [`data`](https://github.com/sekarsw/Capstone-3-Telco-Churn/tree/main/data)              : The data folder containing datasets related to this project. The data used for model development is `data_telco_customer_churn.csv`
 
 ### Overview
+TelcoNet is a company that provides phone and internet services. The company is currently facing a substantial challenge of high customer churn rate at 27%. The company wants a data scientist in their company to create a machine learning model to identify which customers are likely to churn, allowing the company to take preventative measures to keep the customer from churning and minimize revenue loss and costs.
 
+The goal of this project is to predict customers who are likely to churn and what factors affect their decision to churn, allowing the company to take preventative measures that minimizes revenue loss and total cost.
 
 ### Evaluation Metrics
 The evaluation metrics primarily used in this project are F2 Score, Recall, and ROC AUC Score. The F2 Score gives balance between Precision and Recall, with more emphasis on Recall. Both the F2 Score and Recall tells us how well the model minimizes the False Negatives, which are the customer incorrectly predicted to not churn but actually churns. The ROC AUC score 
@@ -33,8 +35,11 @@ The evaluation metrics primarily used in this project are F2 Score, Recall, and 
   - Logistic Regression with Instance Hardness Threshold
 
 ### Result
-
-- The best model to predict customer churn is the Gradient Boosting model with Instance Hardness Threshold for the resampling methods.
+- The best model to predict customer churn is the Gradient Boosting model with Instance Hardness Threshold for the resampling methods with the following results:
+  F2 Score    : 76
+  Recall      : 94
+  ROC AUC     : 84
+- With machine learning, **net revenue** increases by **40%** while **total cost** is reduced to **73%** 
   
 
 ## Customer Churn Prediction App using Streamlit
