@@ -1,4 +1,5 @@
 import streamlit as st
+import os
 import time
 import pickle
 import numpy as np
@@ -8,7 +9,11 @@ from sklearn.metrics import fbeta_score, recall_score, roc_auc_score
 from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay, RocCurveDisplay
 
 # Load model
-pickle_file_path = "model.pkl"
+
+pickle_file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../model.pkl")
+
+pickle_file_path = os.path.normpath(pickle_file_path)
+
 
 with open(pickle_file_path, 'rb') as file:
     model = pickle.load(file)
@@ -35,7 +40,9 @@ dataset_option = st.sidebar.radio(
 
 if dataset_option == "Default Dataset":
     # Load original test dataset
-    df_test = pd.read_csv('test_data_original.csv')
+    file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../data/test_data_original.csv")
+    file_path = os.path.normpath(file_path)
+    df_test = pd.read_csv(file_path)
     X_test = df_test.drop(columns=['Churn'])
     y_test = df_test['Churn']
 else:

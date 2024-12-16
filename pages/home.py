@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import os
 
 # Header
 st.markdown('''
@@ -15,7 +16,13 @@ st.markdown('''
 
 st.write('Dataset Preview: ')
 
-file_path = "C:/Users/Sekar/Purwadhika/Module Capstone/Module 3/test_data_original.csv"
+
+file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../data/data_telco_customer_churn.csv")
+
+file_path = os.path.normpath(file_path)
+
+# Original dataset preview
 df = pd.read_csv(file_path)
+
 st.dataframe(df.head())
 

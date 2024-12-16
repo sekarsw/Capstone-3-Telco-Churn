@@ -1,10 +1,15 @@
 import streamlit as st
+import os
 import pandas as pd
 import numpy as np
 
 # Load model (replace 'model.pkl' with the path to your trained model)
 import pickle
-with open('model.pkl', 'rb') as file:
+
+pickle_file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../model.pkl")
+pickle_file_path = os.path.normpath(pickle_file_path)
+
+with open(pickle_file_path, 'rb') as file:
     model = pickle.load(file)
 
 # User input function
