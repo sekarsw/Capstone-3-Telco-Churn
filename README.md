@@ -36,9 +36,10 @@ The evaluation metrics primarily used in this project are F2 Score, Recall, and 
 
 ### Result
 - The best model to predict customer churn is the Gradient Boosting model with Instance Hardness Threshold for the resampling methods with the following results:
-  F2 Score    : 76
-  Recall      : 94
-  ROC AUC     : 84
+  - F2 Score    : 76
+  - Recall      : 94
+  - ROC AUC     : 84
+- Customers with *Month-to-month contracts*, *shorter tenure*, and fiber optics option for internet service are highly likely to churn.
 - With machine learning, **net revenue** increases by **40%** while **total cost** is reduced to **73%** 
   
 
