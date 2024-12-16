@@ -53,3 +53,5 @@ The model from this project is uploaded to the Google Cloud Storage and Vertex A
 - `deploy.ipynb`    : The notebook containing the deployment process
 - `trial_bigq.json` : JSON file containing credentials for authenticating with Google Cloud services, particularly Google BigQuery.
 - `dev_trial.json`  : JSON file containing credentials for authenticating with Vertex AI.
+
+The JSON file can be accessed [here](https://drive.google.com/drive/folders/11lTvchvHQaGi2Xhk2usUF_MjpVPRrHfm?usp=drive_link).
